@@ -211,5 +211,5 @@ app.post("/signup", function (req, res) {
 });
 
 app.listen(PORT, () => {
-  console.log(`listening on PORT${port}`);
+  console.log(`listening on PORT${PORT}`);
 });
