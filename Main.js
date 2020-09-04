@@ -96,7 +96,7 @@ app.get("/getEvents", function (req, res) {
 });
 
 app.post("/login", (req, res) => {
-  const { email, password } = req.body;
+  let { email, password } = req.body;
   email = email.toLowerCase();
   let cols = [email];
   db.query(
@@ -211,5 +211,5 @@ app.post("/signup", function (req, res) {
 });
 
 app.listen(PORT, () => {
-  console.log(`listening on PORT${PORT}`);
+  console.log(`listening on PORT ${PORT}`);
 });
